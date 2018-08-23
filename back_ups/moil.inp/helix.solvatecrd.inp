@@ -1,0 +1,8 @@
+file conn name=(helix.wcon) read
+file rcrd name=(helix_min.crd) read ctyp=(CHARM)
+file rwbx name=(../../moil/moil.crd/watbox.crd) read 
+file wcrd name=(solvated_helix.crd) wovr ctyp=(CHARM)
+file wpol name=(solvated_helix.poly) wovr
+xwbx=65.000 ywbx=65.000 zwbx=65.000
+action
+*EOD

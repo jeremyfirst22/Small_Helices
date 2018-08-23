@@ -1,0 +1,10 @@
+file conn name=(../../helix.wcon) read
+file rcrd name=(../../helix.dcd) read bina
+file whi3 name=(3-10.dat) wovr
+file whi4 name=(alpha.dat) wovr
+#str=50000
+fmon=2
+lmon=20
+hbcu=3.d0
+acti
+*EOD

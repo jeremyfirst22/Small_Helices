@@ -1,0 +1,7 @@
+file conn name=(helix.wcon) read 
+file rcrd name=(helix.dcd) read bina
+file wcrd name=(helix_eq.crd) wovr
+fdyn tchr
+lpst=100 lpen=100
+acti
+*EOD

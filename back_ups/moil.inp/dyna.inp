@@ -1,0 +1,56 @@
+~~~~~~~~~~~~~~~~~ MOIL dyna opt/GPU input files ~~~~~~~~~~~~~~~~~~~
+file conn name=(helix.wcon) read
+file rcrd name=(helix.crd) read ctyp=(CHARM)
+~file rvel name=(helix.vel) read
+file wcrd name=(helix.dcd) bina wovr
+file wvel name=(helix.dvd) bina wovr
+~~~~~~~~~~~~~~~~~ simulation step temp and output ~~~~~~~~~~~~~~~~~
+#ste=100000 #equ=100000 step=0.0010 #lis=8 
+info=1000 #crd=1000 #vel=1000
+rand=3 
+tmpi=300 tmpf=300 
+#scl=0.01
+~~~~~~~~~~~~~~~~~~~~~ draw atoms using GL/GLUT ~~~~~~~~~~~~~~~~~~~~
+~ndrw=950
+~~~~~~~~~~ GPU device number, use gpu, CPU number of cores ~~~~~~~~
+ndev=0
+~bgpu
+bcpu
+nthr=3
+~~~~~~~~~~~~~~~~~~~~ Double precision  options ~~~~~~~~~~~~~~~~~~~~
+pmed
+angd
+~nbfd
+~~~~~~~~~~~~~~~~~~~~~~ Force lookup options ~~~~~~~~~~~~~~~~~~~~~~~
+~bcpp
+nwat
+~shfl
+~linl
+~nols
+~~~~~~ constraints: shkb,shkl and shkm are mutually exclusive  ~~~~~
+mshk mtol=1.d-12
+~shkl shac=1.d-10 shav=1.d-8
+~shkb shac=1.d-10 shav=1.d-8
+~shkm shac=1.d-10 shav=1.d-8
+~shka
+~gshk
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~hbnd
+~hvdw
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ RESPA ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+sste=4
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Cutoffs ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+relx=9.5 rvmx=9.5
+~rvbg=10.0 rebg=10.0 cutm=10.0
+~~~~~~~~~~~~~~~~ External potentials ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~cent kcnt=2.0 pick #mon 1 68 done
+~~~~~~~~~~~~~~~~~~~~~~~ Simulation box dimensions ~~~~~~~~~~~~~~~~~~
+symm xtra=63.550 ytra=63.550 ztra=63.550
+~~~~~~~~~~~~~~~~~ PME tolerance and grid size ~~~~~~~~~~~~~~~~~~~~~
+ewald dtol=1.e-9 grdx=64 grdy=64 grdz=64
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+nfrz pick chem mono TIP3 | chem mono NAO | chem mono CL done
+action
+*EOD
+
+

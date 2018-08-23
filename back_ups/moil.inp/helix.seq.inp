@@ -1,0 +1,5 @@
+file rcrd name=(helix.pdb) read ctyp=(pdb)
+file wpol name=(helix.poly) wovr
+MOLC=(helix)
+action
+*EOD

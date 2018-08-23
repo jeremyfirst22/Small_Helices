@@ -1,0 +1,7 @@
+file conn name=(helix_balanced.wcon) read
+file rcrd name=(helix_balanced.crd) read
+file wcrd name=(helix_min.crd) wovr ctyp=(CHARM)
+file wmin name=(minimization.dat) wovr
+mistep=5000
+action
+*EOD

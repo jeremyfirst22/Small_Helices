@@ -1,0 +1,16 @@
+file conn name=(../../balanced_capped.wcon) read
+file rcrd name=(../../helix.dcd) read bina
+file whis name=(no.his) wovr
+file wlen name=(no.len) wovr
+file wnrt name=(helen.nrt) wovr
+file whel name=(helicity.mono) wovr
+#str=50000
+fmon=2
+lmon=19
+maxl=75
+#bin=200
+~hbcu=2.7d0
+hbcu=3.d0
+~norw
+acti
+*EOD

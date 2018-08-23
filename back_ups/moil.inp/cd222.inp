@@ -1,0 +1,10 @@
+file conn name=(../../helix.wcon) read
+file rcrd name=(../../helix.dcd) read bina
+file wcd2 name=(cd2bin.dat) wovr 
+file wc14 name=(cd14bin.dat) wovr 
+file whel name=(helical.dat) wovr
+#str=50000
+fmon=2 
+lmon=19
+acti
+*EOD

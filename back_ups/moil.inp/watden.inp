@@ -1,0 +1,12 @@
+file rcon name=(helix.wcon) read
+file rdyn name=(helix.dcd) read bina
+file dens name=(helix.dens) wovr
+#str=100
+xbox=63.550
+ybox=63.550
+zbox=63.550
+xwat=10.0
+ywat=10.0
+zwat=10.0
+acti
+*EOD

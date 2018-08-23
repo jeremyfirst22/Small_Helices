@@ -1,0 +1,8 @@
+file conn name=(../../helix.wcon) read
+file rcrd name=(../../helix.dcd) bina read 
+file wcl name=(gyration.log) 
+#str=50000 step=0.0010 #crd=1000
+pick pick #mon 1 23 done 
+
+actio 
+*EOD 

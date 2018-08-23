@@ -1,0 +1,7 @@
+file conn name=(../../helix.wcon) read
+file rcrd name=(../../helix.dcd) bina read
+file wcrd name=(dist.out) wovr
+pick pick chem mono NAO | chem mono CTER done 
+#str=50000
+action 
+*EOD

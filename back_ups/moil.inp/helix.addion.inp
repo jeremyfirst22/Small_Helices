@@ -1,0 +1,10 @@
+file conn name=(helix_with_ions.wcon) read
+file rcrd name=(helix_with_ions.crd) read
+file wcrd name=(helix_balanced.crd) wovr
+file poly name=(helix_balanced.poly) wovr
+iona=(NAO)
+ionm=(NAO)
+rand=5
+#ion=14
+action
+*EOD

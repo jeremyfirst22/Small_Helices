@@ -1,0 +1,7 @@
+file prop name=(../../FORCE_FIELD/ALL.PROP)  read
+file mono name=(../../FORCE_FIELD/ALL.MONO)  read
+file poly name=(helix_balanced.poly)  read
+file wcon name=(helix_balanced.wcon) wovr
+mdiv
+action
+*EOD
